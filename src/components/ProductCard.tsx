@@ -8,13 +8,14 @@ type ProductCardProps = {
   onViewDetails?: () => void;
   onAddProduct?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   onRemoveProduct?: (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => void;
   onRefundProduct?: (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => void;
   wasAdded?: boolean;
   wasPurchased?: boolean;
+  wasReturned?: boolean;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const ProductCard = ({
@@ -25,6 +26,7 @@ const ProductCard = ({
   wasAdded,
   wasPurchased,
   onRefundProduct,
+  wasReturned,
 }: ProductCardProps) => {
   return (
     <div className="flex max-h-[30rem] w-[20rem] flex-col justify-between gap-2 rounded-[56px] px-8 py-4">
@@ -46,7 +48,7 @@ const ProductCard = ({
         <span className="text-center">{product.price}</span>
       </div>
       <div className="flex w-full items-center justify-between gap-4 pl-12">
-        {!wasAdded && (
+        {!wasAdded && !wasReturned && (
           <>
             <button onClick={onViewDetails}>
               <span className="underline">Ver Detalles</span>

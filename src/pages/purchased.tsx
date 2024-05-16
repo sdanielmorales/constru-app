@@ -1,6 +1,6 @@
 import PageLayout from "../components/PageLayout";
 import ProductCard from "../components/ProductCard";
-import { purchasedProductsAtom } from "../atoms";
+import { purchasedProductsAtom, returnedProductsAtom } from "../atoms";
 import { useAtom } from "jotai";
 import TProduct from "../types/TProduct";
 import { useState } from "react";
@@ -10,8 +10,9 @@ import { toast } from "react-toastify";
 
 const PurchasedProducts = () => {
   const [purchasedProducts, setPurchasedProducts] = useAtom(
-    purchasedProductsAtom,
+    purchasedProductsAtom
   );
+  const [returnedProducts, setReturnedProducts] = useAtom(returnedProductsAtom);
   const [selectedProduct, setSelectedProduct] = useState<TProduct | null>(null);
   const [isRemoveProductModalOpened, setIsRemoveProductModalOpened] =
     useState(false);
@@ -19,8 +20,10 @@ const PurchasedProducts = () => {
   const handleRemoveProduct = (product: TProduct) => {
     if (!purchasedProducts) return;
     const newPurchasedProducts = purchasedProducts.filter(
-      (item) => item.id !== product.id,
+      (item) => item.id !== product.id
     );
+    const newReturnedProducts = [...(returnedProducts || []), product];
+    setReturnedProducts(newReturnedProducts);
     setPurchasedProducts(newPurchasedProducts);
     setIsRemoveProductModalOpened(false);
     toast.success("Producto devuelto correctamente!");

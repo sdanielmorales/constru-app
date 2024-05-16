@@ -17,13 +17,17 @@ const Popover = () => {
       path: `/${username}/purchased`,
     },
     {
+      label: "Mis devoluciones",
+      path: `/${username}/returns`,
+    },
+    {
       label: "Inicio",
       path: `/${username}`,
     },
   ];
 
   return (
-    <div className="absolute right-4 z-20 mt-[163px] flex w-[220px] flex-col rounded-lg bg-slate-700 lg:right-12 ">
+    <div className="absolute right-4 z-20 mt-[200px] flex w-[220px] flex-col rounded-lg bg-slate-700 lg:right-12 ">
       <div>
         {popoverOptions.map((option) => (
           <div

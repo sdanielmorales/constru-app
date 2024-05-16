@@ -9,6 +9,7 @@ import DesignProductPage from "./pages/designProduct";
 import IndustryProductPage from "./pages/industryProduct";
 import CartPage from "./pages/cart";
 import PurchasedProducts from "./pages/purchased";
+import ReturnedProducts from "./pages/returns";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "purchased",
         element: <PurchasedProducts />,
+      },
+      {
+        path: "returns",
+        element: <ReturnedProducts />,
       },
     ],
   },
