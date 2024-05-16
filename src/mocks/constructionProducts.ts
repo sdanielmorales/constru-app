@@ -1,0 +1,58 @@
+export const CONSTRUCTION_PRODUCTS = [
+  {
+    id: "2984235",
+    title: "Cerradura de seguridad",
+    price: "$10",
+    imageUrl: "https://d35y5t5rad2lom.cloudfront.net/images/upload/106/card/60006d858a0ac8.04682417.jpg",
+    description: "Cerradura de seguridad para tu hogar.",
+  },
+  {
+    id: "2753612",
+    title: "Cerradura para embutir",
+    price: "$15",
+    imageUrl: "https://d35y5t5rad2lom.cloudfront.net/images/upload/515/card/5b311a97dbc487.64259292.jpg",
+    description: "Cerradura para embutir en puertas de madera.",
+  },
+  {
+    id: "2625471",
+    title: "Cerradura de caja",
+    price: "$10",
+    imageUrl: "https://d35y5t5rad2lom.cloudfront.net/images/upload/515/card/5b311ea1d78535.07495654.jpg",
+    description: "Cerradura de caja para mayor seguridad.",
+  },
+  {
+    id: "2341872",
+    title: "Cerradura de caja tres puntos",
+    price: "$10",
+    imageUrl: "https://d35y5t5rad2lom.cloudfront.net/images/upload/515/card/5b31288192ff25.27496841.jpg",
+    description: "Cerradura de caja tres puntos para mayor seguridad.",
+  },
+  {
+    id: "2895632",
+    title: "Cerradura de puerta corrediza",
+    price: "$10",
+    imageUrl: "https://d35y5t5rad2lom.cloudfront.net/images/upload/515/card/5b312b88cb7b97.56496041.jpg",
+    description: "Cerradura de puerta corrediza para mayor seguridad.",
+  },
+  {
+    id: "2124563",
+    title: "Cerradura tipo pomo bolton",
+    price: "$10",
+    imageUrl: "https://d35y5t5rad2lom.cloudfront.net/images/upload/555/card/5b72e6315e8776.75030308.png",
+    description: "Cerradura tipo pomo bolton para mayor seguridad.",
+  },
+  {
+    id: "2365987",
+    title: "Cerradura tipo manija",
+    price: "$10",
+    imageUrl: "https://d35y5t5rad2lom.cloudfront.net/images/upload/555/card/5b72e67bed65d8.00634642.png",
+    description: "Cerradura tipo manija para mayor seguridad.",
+  },
+  {
+    id: "2789654",
+    title: "Cerradura principal",
+    price: "$10",
+    imageUrl: "https://d35y5t5rad2lom.cloudfront.net/images/upload/555/card/5b72e757eb0898.50045571.jpg",
+    description: "Cerradura tipo manija para mayor seguridad.",
+  },
+];
